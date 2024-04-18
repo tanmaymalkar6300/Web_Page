@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        :root{
+           
+            --content-bg-color:white;
+            --content-color: balck;
+
+
+        }
+        * {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width:100vw;  
+            height:100vh;
+            background-color: var(--content-bg-color);
+             color:white;
+            
+        }
+
+        .container a{
+            color:white;
+        }
+        .leftbar{
+            width: 250px;
+            height:100vh;
+            background-color: yellow;
+            display:inline-block;
+            
+
+        }
+        .rightbar{
+            width: calc(100% - 250px);
+            height:100vh;
+            background-color: orange;
+            display:inline-block;
+            float: right;
+        }
+        .rightBar p a::after {
+            content: "("attr(href)")";
+        }
+    </style>
+</head>
+
+<body>
+    <div class ="container">
+        <div class = "leftbar">
+        <ul>
+            <li><a href="http://www.google.com/">HOME</a></li>
+            <li><a href="http://www.google.com/">Contact</a></li>
+        </ul>
+       </div>
+        <div class = "rightbar">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolor inventore illum quasi magni veniam excepturi laborum velit?
+        <a href="http://www.google.com/">READ MORE</a>
+    </p>
+</div>
+    </div>
+</body>
+</html>

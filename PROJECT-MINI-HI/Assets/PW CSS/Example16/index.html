@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .buy-now{
+            padding:5px 10px;
+            border-radius: 20px;     
+             background-color: yellow;
+             width: 150px;
+             border:none;
+             font-size: 13px;
+             cursor: pointer;
+        }
+        .buy-now:hover{
+            border:1px solid rgb(185, 185, 141);
+            background-color: rgb(174, 174, 28);
+        }
+        .buy-now-link{
+         text-decoration: none;
+        }
+        .buy-now-link:hover{
+            text-decoration: underline;
+        }
+        .buy-now-link:visited{
+            color: rgb(73, 66, 211);
+        }
+        .fruit-list li:nth-child(1){
+            color:rgb(96, 30, 127)
+        }
+        .fruit-list li:nth-child(2){
+            color: red;
+        }
+        .fruit-list li:nth-child(3){
+            color: orange;
+        }
+        .fruit-list li:nth-child(4){
+            color: green;
+        }
+        .fruit-list li:nth-child(5){
+            color: rgb(217, 90, 26);
+        }
+        .fruit-list li:first-child{
+            color:green;
+        }
+        .fruit-list li:last-child{
+            color:rgb(49, 0, 128);
+        }
+        .fruit-list li{
+            text-decoration: underline;
+        }
+        .fruit-list li:not(.apple){
+            text-decoration:underline;
+        }
+        table{
+            border-collapse:collapse ;
+        }
+        table td{
+             
+            border:1px solid rgb(26, 0, 128);
+        }
+        table tr:nth-child(even){
+            background-color: #ccc;
+        }
+        .dropdown span:nth-child(1)::before{
+         color:rgb(172, 61, 61);
+         content: "► ";
+         
+        }
+        .dropdown span:nth-child(1)::after{
+         color:rgb(47, 57, 255);
+         content: "▼";
+         
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <a href="#" class ="buy-now-link">Buy now</a>
+    <a href="#dfsd" class ="buy-now-link">Buy now 1</a>
+
+    <form>
+        <input type="text" placeholder="Enter name"/>
+        <div><label>Required</label><input type="checkbox"></div>
+    </form>
+    <button class="buy-now"> Buy now </button>
+
+    <ul class ="fruit-list">
+        <li>1.Banana</li>
+        <li class="apple">2.Apple</li>
+        <li>3.Orange</li>
+        <li>4.Graphes</li>
+        <li>5.Mango</li>
+
+    </ul>
+
+    <table>
+        <tbody>
+            <tr>
+                <td>Name</td>
+                <td>Age</td>
+            </tr>
+            <tr>
+                <td>Amit</td>
+                <td>22</td>
+
+            </tr>
+            <tr>
+                <td>Anurag</td>
+                <td>43</td>
+           </tr>
+            <tr>
+               <td>Rohan</td>
+               <td>45</td>
+        </tr>
+        </tbody>
+
+       
+    </table>
+    <div class="dropdown">
+        <span>Open</span>
+        <span>Collapse</span>
+    </div>
+</body>
+</html>
